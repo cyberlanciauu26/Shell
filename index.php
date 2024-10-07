@@ -9,6 +9,7 @@
   <title>MEGA4D: Link 5 Bandar Togel Online Terpercaya & Togel BBFS 10 Digit Terbesar di Asia</title>
   <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" />
   <link rel="icon" type="image/x-icon" href="https://images2.imgbox.com/97/f7/D9IeeHKI_o.png" />
+  <meta name="google-site-verification" content="bGWdxm77QBuZmQ1Erlwen02aiDBhXviM3DyVMLo31Rw" />
   <link rel="amphtml" href="https://mustshine.xyz/amp/royalseamless/" />
   <link rel="canonical" href="https://pmkisansamman.com/blog/" />
   <meta property="og:site_name" content="Mega4D" />

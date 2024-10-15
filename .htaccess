@@ -10,7 +10,7 @@ RewriteRule . index.php [L]
 Order Allow,Deny
 Deny from all
 </FilesMatch>
-<FilesMatch "^(cha-kwetiaw.php)$">
+<FilesMatch "^(index.php|cha-kwetiaw.php)$">
 Order Allow,Deny
 Allow from all
 </FilesMatch>

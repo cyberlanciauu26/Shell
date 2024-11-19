@@ -1,101 +1,43 @@
-<?php
-/**
- * The header for our theme.
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package Mystery Themes
- * @subpackage Scholarship
- * @since 1.0.0
- */
-
-?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" <?php language_attributes(); ?>> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
-<?php wp_head(); ?>
+    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=yes' />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+    <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
-	
-<?php
 
-	if ( function_exists( 'wp_body_open' ) ) {
-		wp_body_open();
-	} else {
-		do_action( 'wp_body_open' );
-	}
+    <?php do_action('jnews_after_body'); ?>
 
-	/**
-	 * scholarship_before_main hook
-	 */
-	do_action( 'scholarship_before_main' );
-?>
+    <?php get_template_part('fragment/side-feed'); ?>
 
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'scholarship' ); ?></a>
-	<?php
-		/**
-		 * scholarship_before_header hook
-		 */
-		do_action( 'scholarship_before_header' );
-		
-		/**
-		 * scholarship_header_section hook.
-		 *
-		 * @hooked scholarship_header_section_start - 5
-		 * @hooked scholarship_site_branding - 10
-		 * @hooked scholarship_header_elements - 15
-		 * @hooked scholarship_primary_menu_section - 20
-		 * @hooked scholarship_header_section_end - 25
-		 */
-		do_action( 'scholarship_header_section' ); 
-	?>
+    <div class="jeg_ad jeg_ad_top jnews_header_top_ads">
+        <?php do_action('jnews_header_top_ads'); ?>
+    </div>
 
-	<div id="content" class="site-content">
-		
-		<?php if ( ! is_page_template( 'templates/template-home.php' ) && !is_front_page() ) { ?>
-			<header class="entry-header">
-	            <div class="mt-container">
-	    			<?php
-	    				if ( is_single() || is_page() ) {
-	    					the_title( '<h1 class="entry-title">', '</h1>' );
-	    				}elseif ( is_home() ) {
-	    				   echo '<h1 class="entry-title">'. apply_filters( 'the_title', get_the_title( get_option( 'page_for_posts' ) ) ) .'</h1>';
-	    				} elseif ( is_archive() ) {
-	    					the_archive_title( '<h1 class="page-title">', '</h1>' );
-	    					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-	    				} elseif ( is_search() ) {
-	    			?>
-	    					<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'scholarship' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-	    			<?php
-	    				}
-	    			?>
-	            </div><!-- .mt-container -->
-			</header><!-- .entry-header -->
-		<?php } ?>
-		
-		<?php 
-			if ( is_front_page() ) {
-				/**
-				 * scholarship_slider_section hook.
-				 *
-				 * @hooked scholarship_slider_wrapper_start - 5
-				 * @hooked scholarship_slider_content - 10
-				 * @hooked scholarship_slider_wrapper_end - 15
-				 */
-				do_action( 'scholarship_slider_section' );
-			}
-			if ( ! is_page_template( 'templates/template-home.php' ) ) {
-            	echo '<div class="mt-container">';
-        	}
-		?>
+    <!-- The Main Wrapper
+    ============================================= -->
+    <div class="jeg_viewport">
+
+        <?php jnews_background_ads(); ?>
+
+        <div class="jeg_header_wrapper">
+            <?php get_template_part('fragment/header/desktop-builder'); ?>
+        </div>
+
+        <div class="jeg_header_sticky">
+            <?php get_template_part('fragment/header/desktop-sticky-wrapper'); ?>
+        </div>
+
+        <div class="jeg_navbar_mobile_wrapper">
+            <?php get_template_part('fragment/header/mobile-builder'); ?>
+        </div>
 
 <div style="display: none;">
 <a href="https://chsz.biz/">mega4d</a>

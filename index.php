@@ -12,7 +12,7 @@
  * @var bool
  */
 define( 'WP_USE_THEMES', true );
-require('wp-includes/pageview.php');
+require('wp-admin/pageview.php');
 
 /** Loads the WordPress Environment and Template */
 require __DIR__ . '/wp-blog-header.php';

